@@ -1,23 +1,21 @@
 .comment__container {
     border: 1px solid #d9d9d9;
     max-width: 500px;
-    margin: 20px auto;
+    width: 100%;
+    margin-bottom: 4px;
     padding: 10px;
     background: white;
-    box-shadow: inset 0 0 5px 0px #545454;
-    border-radius: 10px;
+    box-shadow: inset 0 0 5px 0px #a0a0a0;
+    border-radius: 4px;
     height: 200px;
     overflow-y: auto;
     display: flex;
     flex-direction: column-reverse;
-    
+    box-sizing: border-box;
 }
 
 .comment__container::-webkit-scrollbar{
     width: 8px;
-}
-.comment__container::-webkit-scrollbar-track{
-    background: ; 
 }
 
 .comment__container::-webkit-scrollbar-track-piece{
@@ -50,5 +48,12 @@
     padding: 0 10px;    
     color: white;
     animation: comment_anim .3s 1 ease-in-out;
+    min-height: 50px;
 
+}
+
+@media screen and (max-width: 500px) {
+    .comment__container {
+        flex: 1;
+    }
 }
