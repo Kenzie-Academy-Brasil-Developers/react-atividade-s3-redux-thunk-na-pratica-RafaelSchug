@@ -1,6 +1,6 @@
 import { ADD_COMMENT } from "./actionTypes";
 
-const initialState = { name: "Kenzie", comments: [] };
+const initialState = { name: "Kenzie", comments: ["Olá, Kenzinho", "Bem vindo ao chat da Kenzie"] };
 
 const userReducer = (state = initialState, action) => {
   switch (action.type) {
